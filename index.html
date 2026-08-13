@@ -4,16 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>moonsettler github.io</title>
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Offline Bitcoin demo tools: Argon2id Border Wallet Generator and CashVM Lamport signatures.">
+    <title>moonsettler.github.io — bitcoin demos</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>bitcoin related demos</h1>
-    <ul>
-        <li><a href="argon-bwg/01/index.html">Argon BWG (Border Wallet Generator v0.1 javascript)</a></li>
-        <li><a href="argon-bwg/02/index.html">Argon BWG (Border Wallet Generator v0.2 WASM)</a></li>
-        <li><a href="lamport-js/index.html">Lamport Signature generator for CashVM (BCH Spec)</a></li>
-        <li><a href="https://ide.bitauth.com/import-gist/4fa57d1a243cc4002603a96c71550c3c">Open Lamport Signature CashVM (BCH Spec) in bitauth.com IDE</a></li>
-    </ul>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <main class="term" aria-label="moonsettler.github.io demo index">
+      <header class="term-bar">
+        <span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="term-path">moonsettler@github.io: ~</span>
+        <span class="term-status" id="clock">--:--:-- UTC</span>
+      </header>
+
+      <div class="term-screen">
+        <p class="out"><span class="prompt">$</span> <span id="boot"></span><span class="caret" aria-hidden="true"></span></p>
+        <p class="out ok reveal"><span class="sub">&gt; mounting demo modules</span> <b>OK</b></p>
+        <p class="out ok reveal"><span class="sub">&gt; verifying bitcoin toolchain</span> <b>OK</b></p>
+        <p class="out reveal"><span class="prompt">$</span> ls --demos</p>
+
+        <ul class="menu">
+          <li class="reveal">
+            <a href="argon-bwg/01/index.html">
+              <span class="idx">[0]</span>
+              <span class="name">argon-bwg/01</span>
+              <span class="desc">Border Wallet Generator v0.1 (javascript)</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="argon-bwg/02/index.html">
+              <span class="idx">[1]</span>
+              <span class="name">argon-bwg/02</span>
+              <span class="desc">Border Wallet Generator v0.2 (wasm)</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="lamport-js/index.html">
+              <span class="idx">[2]</span>
+              <span class="name">lamport-js</span>
+              <span class="desc">Lamport Signature generator for CashVM (BCH spec)</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://ide.bitauth.com/import-gist/4fa57d1a243cc4002603a96c71550c3c" target="_blank" rel="noopener noreferrer">
+              <span class="idx">[3]</span>
+              <span class="name">bitauth.com</span>
+              <span class="desc">Lamport Signature CashVM — open in bitauth IDE</span>
+              <span class="tag">external</span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="out reveal"><span class="prompt">$</span> <span class="caret" aria-hidden="true"></span></p>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
